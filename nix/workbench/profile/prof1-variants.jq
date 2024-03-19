@@ -1016,15 +1016,9 @@ def all_profile_variants:
     { name: "utxoscale-solo-24M64G-nomadperfssd"
     }
   , $utxoscale_solo_template *
-    { name: "utxoscale-solo-12M64G-nomadperfssd"
+    { name: "utxoscale-solo-11M16G-nomadperfssd"
     , genesis:
-      { utxo:                               (12 * $M)
-      }
-    }
-  , $utxoscale_solo_template *
-    { name: "utxoscale-solo-12M16G-nomadperfssd"
-    , genesis:
-      { utxo:                               (12 * $M)
+      { utxo:                               (11 * $M)
       }
     , cluster:                              nomad_memory_limit(16384)
     }
